@@ -104,7 +104,6 @@ Visit: http://localhost:5173
 ---
 
 
----
 
 ### 🔒 Security
 Uses HTTP-only cookies for storing JWT securely  
