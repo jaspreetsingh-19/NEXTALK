@@ -17,10 +17,10 @@ const RegisterPage = () => {
     };
 
     return (
-        <div className="register-container">
-            <div className="register-card">
-                <h2 className="register-title">Create Account</h2>
-                <form onSubmit={handleSubmit} className="register-form">
+        <div className="auth-container">
+            <div className="auth-card">
+                <h2 className="auth-title">Create Account</h2>
+                <form onSubmit={handleSubmit} className="auth-form">
                     <div className="form-group">
                         <label htmlFor="name" className="form-label">Full Name</label>
                         <input
@@ -63,12 +63,12 @@ const RegisterPage = () => {
                         />
                     </div>
 
-                    <button type="submit" className="register-button">
+                    <button type="submit" className="auth-button">
                         Create Account
                     </button>
                 </form>
 
-                <div className="register-footer">
+                <div className="auth-footer">
                     <p>Already have an account? <Link to={"/login"} className="login-link">Sign in</Link></p>
                 </div>
             </div>

@@ -3,7 +3,7 @@ import { useAuth } from '../contexts/AuthContext';
 import { Link } from 'react-router-dom';
 
 
-const RegisterPage = () => {
+const LoginPage = () => {
 
     const [username, setUsername] = useState("")
     const [password, setPassword] = useState("")
@@ -17,10 +17,10 @@ const RegisterPage = () => {
     };
 
     return (
-        <div className="register-container">
-            <div className="register-card">
-                <h2 className="register-title">Login Into Account</h2>
-                <form onSubmit={handleSubmit} className="register-form">
+        <div className="auth-container">
+            <div className="auth-card">
+                <h2 className="auth-title">Login Into Account</h2>
+                <form onSubmit={handleSubmit} className="auth-form">
 
                     <div className="form-group">
                         <label htmlFor="username" className="form-label">Username</label>
@@ -45,17 +45,17 @@ const RegisterPage = () => {
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                             className="form-input"
-                            placeholder="Enter your password password"
+                            placeholder="Enter your password"
                             required
                         />
                     </div>
 
-                    <button type="submit" className="register-button">
+                    <button type="submit" className="auth-button">
                         Login
                     </button>
                 </form>
 
-                <div className="register-footer">
+                <div className="auth-footer">
                     <p>Do Not Have a Account? <Link to={"/register"} className="login-link">Register</Link></p>
                 </div>
             </div>
@@ -63,4 +63,4 @@ const RegisterPage = () => {
     );
 };
 
-export default RegisterPage;
+export default LoginPage;
