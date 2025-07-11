@@ -103,31 +103,36 @@ npm install
 ```bash
 npm run dev
 ```
-### Visit: http://localhost:5173
+Visit: http://localhost:5173
+
 ---
 
 
+---
+
 ### 🔒 Security
-Uses HTTP-only cookies for storing JWT securely
+Uses HTTP-only cookies for storing JWT securely  
 CORS setup for cross-origin requests between frontend and backend
 
 ---
-### 🧠 Learning Goals
-Deep understanding of WebRTC and real-time communication
 
+### 🧠 Learning Goals
+Deep understanding of WebRTC and real-time communication  
 Efficient use of Socket.IO for peer connection signaling
 
 ---
 
 ### 🙌 Contributing
-Contributions are welcome! Feel free to submit issues or pull requests.
+Contributors are welcome! Feel free to submit issues or pull requests.
+
 ---
-###📄 License
+
+### 📄 License
 This project is licensed under the MIT License.
+
 ---
-###📧 Contact
-Built by Jaspreet Singh
 
-Email-jaspreetsingh7192006@gmail.com
-
+### 📧 Contact  
+Built by Jaspreet Singh  
+📧 Email: [jaspreetsingh7192006@gmail.com](mailto:jaspreetsingh7192006@gmail.com)
 
