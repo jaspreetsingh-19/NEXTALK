@@ -17,13 +17,9 @@
 
 - 👤 User Registration & Login (Secure JWT Authentication)
 - 📹 Real-Time Video & Audio Communication
-- 🔊 Mute/Unmute Audio & Toggle Video
 - 🖥️ Screen Sharing Functionality
-- 🔐 Lobby with Display Name Input Before Joining Meeting
-- 👥 Dynamic Participant List
 - 🔗 Create and Join Meeting by ID
-- 🚪 End Call Button
-- 🌙 Modern UI with Dark Theme and FontAwesome Icons
+
 
 ---
 
