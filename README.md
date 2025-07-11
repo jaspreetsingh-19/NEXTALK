@@ -131,8 +131,6 @@ This project is licensed under the MIT License.
 Built by Jaspreet Singh  
 📧 Email: [jaspreetsingh7192006@gmail.com](mailto:jaspreetsingh7192006@gmail.com)
 
----
-
 ⭐ **If you liked this project, don’t forget to give it a star!**
 
 ---
