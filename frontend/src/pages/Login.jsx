@@ -45,7 +45,7 @@ const RegisterPage = () => {
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                             className="form-input"
-                            placeholder="Enter your password"
+                            placeholder="Enter your password password"
                             required
                         />
                     </div>
