@@ -32,6 +32,27 @@
 > Coming soon – screenshots or a short demo GIF!
 
 ---
+## 📁 Project Structure
+
+```text
+nextalk/
+├── backend/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── middleware/
+│   ├── config/
+│   ├── server.js
+│   └── .env.example
+├── frontend/
+│   ├── components/
+│   ├── pages/
+│   ├── styles/
+│   ├── VideoMeet.jsx
+│   └── .env.example
+├── .gitignore
+```
+---
 
 ## 🛠️ Installation & Setup
 
@@ -67,65 +88,46 @@ VITE_API_URL=http://localhost:8000
 ### 4. Run the Backend Server
 ```bash
 npm run dev
-5. Install Frontend Dependencies
-bash
-Copy
-Edit
+```
+---
+
+### 5. Install Frontend Dependencies
+```bash
+
 cd ../frontend
 npm install
-6. Run the Frontend Server
-bash
-Copy
-Edit
+```
+---
+
+### 6. Run the Frontend Server
+```bash
 npm run dev
-Visit: http://localhost:5173
+```
+### Visit: http://localhost:5173
+---
 
-📂 Folder Structure
-pgsql
-Copy
-Edit
-NEXTALK/
-├── backend/
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   └── server.js
-├── frontend/
-│   ├── components/
-│   ├── pages/
-│   └── VideoMeet.jsx
-└── README.md
-🔒 Security
+
+### 🔒 Security
 Uses HTTP-only cookies for storing JWT securely
-
 CORS setup for cross-origin requests between frontend and backend
 
-🧠 Learning Goals
+---
+### 🧠 Learning Goals
 Deep understanding of WebRTC and real-time communication
 
 Efficient use of Socket.IO for peer connection signaling
 
-State management in React for dynamic UIs
-
-🙌 Contributing
-Contributions are welcome! Feel free to submit issues or pull requests.
-
-📄 License
-This project is licensed under the MIT License.
-
-📧 Contact
-Built with ❤️ by Jaspreet Singh
-
-yaml
-Copy
-Edit
-
 ---
 
-Let me know if you want to:
+### 🙌 Contributing
+Contributions are welcome! Feel free to submit issues or pull requests.
+---
+###📄 License
+This project is licensed under the MIT License.
+---
+###📧 Contact
+Built by Jaspreet Singh
 
-- Add screenshots or a demo link
-- Add contribution guidelines or deployment steps (e.g., Netlify/Vercel)
-- Include badges (GitHub stars, forks, etc.) or a changelog
+Email-jaspreetsingh7192006@gmail.com
 
-Would you like me to create a `LICENSE` file or generate a GIF preview as well?
+
