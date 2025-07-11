@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", sans-serif;
+  line-height: 1.6;
+}
+
+.app {
+  min-height: 100vh;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Header Styles */
+.headerH {
+  background-color: #18181b;
+  border-bottom: 1px solid #27272a;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo-icon {
+  width: 2rem;
+  height: 2rem;
+  background-color: #2563eb;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-icon span {
+  color: white;
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.logout-btn {
+  background-color: #dc2626;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+  margin-right: 2px;
+}
+
+.logout-btn:hover {
+  background-color: #b91c1c;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+}
+
+/* Main Content */
+.main {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+.welcome-section {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.welcome-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(to right, #ffffff, #d4d4d8);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ 
+}
+
+.welcome-subtitle {
+  color: #a1a1aa;
+  font-size: 1.25rem;
+  max-width: 32rem;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Join Meeting Card */
+.join-meeting-card {
+  background-color: #18181b;
+  border: 1px solid #27272a;
+  border-radius: 1rem;
+  padding: 2.5rem;
+  max-width: 32rem;
+  margin: 0 4rem auto;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.card-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.card-icon {
+  width: 4rem;
+  height: 4rem;
+  background-color: #2563eb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem auto;
+}
+
+.card-icon svg {
+  width: 2rem;
+  height: 2rem;
+  color: white;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.card-subtitle {
+  color: #a1a1aa;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #d4d4d8;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: #000000;
+  border: 1px solid #3f3f46;
+  border-radius: 0.75rem;
+  color: white;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.form-input::placeholder {
+  color: #71717a;
+}
+
+.join-btn {
+  width: 100%;
+  background-color: #2563eb;
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  font-size: 1.125rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+.join-btn:hover {
+  background-color: #1d4ed8;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4);
+  transform: scale(1.02);
+}
+
+.join-btn:active {
+  transform: scale(0.98);
+}
+
+/* Quick Actions */
+.quick-actions {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .quick-actions {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.action-card {
+  background-color: #18181b;
+  border: 1px solid #27272a;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.action-card:hover {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
+}
+
+.action-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem auto;
+}
+
+.action-icon svg {
+  width: 1.75rem;
+  height: 1.75rem;
+  color: white;
+}
+
+.action-icon.green {
+  background-color: #16a34a;
+}
+
+.action-icon.purple {
+  background-color: #9333ea;
+}
+
+.action-icon.orange {
+  background-color: #ea580c;
+}
+
+.action-title {
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-bottom: 0.75rem;
+}
+
+.action-description {
+  color: #a1a1aa;
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+.action-btn {
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+.action-btn:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+}
+
+.start-btn {
+  background-color: #16a34a;
+  color: white;
+}
+
+.start-btn:hover {
+  background-color: #15803d;
+}
+
+.schedule-btn {
+  background-color: #9333ea;
+  color: white;
+}
+
+.schedule-btn:hover {
+  background-color: #7c3aed;
+}
+
+.history-btn {
+  background-color: #ea580c;
+  color: white;
+}
+
+.history-btn:hover {
+  background-color: #c2410c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main {
+    padding: 2rem 1rem;
+  }
+
+  .welcome-title {
+    font-size: 1.875rem;
+  }
+
+  .welcome-subtitle {
+    font-size: 1.125rem;
+  }
+
+  .join-meeting-card {
+    padding: 2rem;
+  }
+
+  .action-card {
+    padding: 1.5rem;
+  }
+}
+
+
+.meeting-box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 768px) {
+  .meeting-box-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
