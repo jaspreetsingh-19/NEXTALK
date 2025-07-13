@@ -25,7 +25,7 @@
 
 ## 📸 UI Preview
 
-> Coming soon – screenshots or a short demo GIF!
+> Coming soon 
 
 ---
 ## 📁 Project Structure
