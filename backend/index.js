@@ -31,7 +31,7 @@ app.use(cors({
 app.use("/api/user", router)
 app.use("/api/meetings", authMiddleware, mRouter)
 
-mongoose.connect(process.env.MOURl).then(() => {
+mongoose.connect(process.env.MONGO_URI).then(() => {
     console.log("connected")
     server.listen(process.env.PORT, () => {
         console.log("port connected")
