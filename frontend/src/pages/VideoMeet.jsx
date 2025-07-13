@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useRef, useState } from "react"
+import React, { useEffect, useRef, useState } from "react"
 import { io } from "socket.io-client"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -27,6 +27,26 @@ const peerConfigConnections = {
 }
 
 let connections = {}
+
+
+const RemoteVideo = React.memo(({ stream }) => {
+    const videoRef = useRef();
+
+    useEffect(() => {
+        if (videoRef.current && stream) {
+            videoRef.current.srcObject = stream;
+        }
+    }, [stream]);
+
+    return (
+        <video
+            autoPlay
+            playsInline
+            ref={videoRef}
+            className="remote-video"
+        />
+    );
+});
 
 function VideoMeet() {
     const socketRef = useRef()
@@ -362,8 +382,16 @@ function VideoMeet() {
         }
         const camMicStream = await navigator.mediaDevices.getUserMedia({
             video: true,
-            audio: true,
+            audio: true
         })
+        if (!video) {
+            const videoTrack = camMicStream.getVideoTracks()[0]
+            if (videoTrack) videoTrack.enabled = video
+        }
+        if (!audio) {
+            const audioTrack = camMicStream.getAudioTracks()[0]
+            if (audioTrack) audioTrack.enabled = audio
+        }
         replaceStream(camMicStream)
         setScreen(false)
     }
@@ -482,18 +510,10 @@ function VideoMeet() {
                             <div className="remote-videos">
                                 {videos.map((video) => (
                                     <div key={video.socketId} className="remote-video-container">
-                                        <video
-                                            autoPlay
-                                            playsInline
-                                            className="remote-video"
-                                            ref={(ref) => {
-                                                if (ref && video.stream) {
-                                                    ref.srcObject = video.stream
-                                                }
-                                            }}
-                                        />
+                                        <RemoteVideo stream={video.stream} />
                                     </div>
                                 ))}
+
                             </div>
                             <div className="local-video-container">
                                 <video ref={localVideoRef} autoPlay muted className="local-video" />
